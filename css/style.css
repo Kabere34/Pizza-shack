@@ -10,17 +10,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-container {
-  width: 40%;
+.hero-section {
+  display: flex;
+  flex-direction: row;
 }
-.hero-container img {
+.hero-image {
+  width: 33%;
+  padding: 30px;
+}
+.hero-image img {
   max-width: 100%;
   max-height: 100%;
 }
 .hero-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 65%;
 }
 p,
 h1,
