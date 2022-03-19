@@ -5,10 +5,16 @@
 }
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: rgb(104, 92, 92);
   /* background-image: url("images/peter-gargiulo-cGNCepznaV8-unsplash.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+.navbar-brand img {
+  width: 50px;
+}
+.hidden {
+  display: none;
 }
 .hero-section {
   display: flex;
@@ -34,16 +40,16 @@ h1,
 h2 {
   color: white;
 }
-.menu-section {
+.about-section {
   background-color: aquamarine;
 }
-.menu-text {
+.about-text {
   width: 40%;
 }
-.menu-images div {
+.about-images div {
   width: 400px;
 }
-.menu-images img {
+.about-images img {
   max-width: 100%;
   padding: 3px;
 }
@@ -51,12 +57,12 @@ h2 {
 .second-imgs {
   display: flex;
 }
-.menu-section {
+.about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu-content {
+.about-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
