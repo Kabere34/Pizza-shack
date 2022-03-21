@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/02b0d3571e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+<!-- menu navbar -->
+<div class="container">
+  <div class="navbar navbar-expand-md navbar-light">
+    <a href="#" class="navbar-brand">
+      <!-- <img
+        src="images/Pizza Shack (1).png"
+        alt=""
+        class="d-inline-block align-top"
+      /> -->
+      Pizza Shack</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#toggleMobileMenu"
+      aria-controls="toggleMobileMenu"
+      aria-expanded="false"
+      arai-lable="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-link" href="#"><a href="index.html">Home</a></li>
+        <li class="nav-link" href="#"><a href="about.html">About Us</a></li>
+        <li class="nav-link" href="#"><a href="menu.html">Menu</a>
+        </li>
+        <li class="nav-link" href="#">Contact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- menu navbar-->
+
+    <div class="menu">
+      <div class="size"><a href="">Size</a></div>
+      <div class="crust"><a href="">Crust</a></div>
+      <div class="toppings"><a href="">Toppings</a></div>
+    </div>
+    <div class="sizing">
+      <div class="small-size">Small</div>
+      <div class="medium-size">Medium</div>
+      <div class="large-size">Large</div>
+    </div>
+    <div class="topping-choices">
+    <div class="pizza-topping">
+
+      <div class="tops-img">
+        <img src="images/choice3.jpg" alt="" />
+      </div>
+      <div class="txt">
+        <p><h3>Hawaiian </h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi veritatis consequatur dolorem voluptatibus quo placeat tenetur aspernatur ab obcaecati.</p>
+          <button onclick="hawaii()" id="Hawaii" class="btn-order">Order</button>
+      </div>
+    </div>
+    <div class="pizza-topping">
+      <div class="tops-img">
+        <img src="images/choice2.jpg" alt="" />
+      </div>
+      <div class="txt">
+        <p><h3>Barbeque </h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi veritatis consequatur dolorem voluptatibus quo placeat tenetur aspernatur ab obcaecati.</p>
+          <button onclick="bbq()" id="bbq" class="btn-order">Order</button>
+      </div>
+    </div>
+    <div class="pizza-topping">
+      <div class="tops-img">
+        <img src="images/choice6.jpg" alt="" />
+      </div>
+      <div class="txt">
+        <p><h3>Classic olive pizza with Red </h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi veritatis consequatur dolorem voluptatibus quo placeat tenetur aspernatur ab obcaecati.</p>
+          <button onclick="olive()" id="olive" type="button" class="btn-order">Order</button>
+    </div>
+  </div>
+  <!-- form action -->
+<!-- <form action="">
+  <div>
+<input list="sizes" type="text" id="size" placeholder="size...">
+  <datalist id="sizes">
+  <option value="Small">
+  <option value="Medium">
+  <option value="Large">
+  </datalist>
+  </div>
+
+  <div>
+    <input list="crust" type="text" id="crusts" placeholder="crust...">
+  <datalist id="crust">
+  <option value="Crispy">
+  <option value="Stuffed">
+  <option value="Gluten-free">
+  </datalist>
+</div>
+
+  <div>
+    <input list="toppings" type="text" id="topping" placeholder="Toppings...">
+  <datalist id="toppings">
+  <option value="Hawaiian">
+  <option value="Barbeque">
+  <option value="Olive">
+  </datalist>
+</div>
+</form>
+
+<p id="demo" onclick="myFunction()">place order</p>
+  <p id="info"></p> -->
+
+   <!-- form action -->
+
+     Modal box
+    <div class="modalBox">
+<div class="modalContent">
+<span class="close"><i class="fa-solid fa-xmark"></i></span>
+<div class="formHolder">
+  <h3>Curate</h3>
+
+  <form action="">
+    <div>
+  <input list="sizes" type="text" id="size" placeholder="size...">
+    <datalist id="sizes">
+    <option value="Small">
+    <option value="Medium">
+    <option value="Large">
+    </datalist>
+    </div>
+
+    <div>
+      <input list="crust" type="text" id="crusts" placeholder="crust...">
+    <datalist id="crust">
+    <option value="Crispy">
+    <option value="Stuffed">
+    <option value="Gluten-free">
+    </datalist>
+  </div>
+
+    <div>
+      <input list="toppings" type="text" id="topping" placeholder="Toppings...">
+    <datalist id="toppings">
+    <option value="Hawaiian">
+    <option value="Barbeque">
+    <option value="Olive">
+    </datalist>
+  </div>
+  </form>
+
+  <p id="demo" onclick="myFunction()">place order</p>
+    <p id="info"></p>
+  <!-- <form action="#" method="post">
+    <div class="row">
+      <label for="size">Piza size:</label>
+      <input type="checkbox" name="size" id="small" >Small Ksh 70</Ksh><br>
+      <input type="checkbox" name="medium" id="medium" >medium ksh 80<br>
+      <input type="checkbox" name="large" id="large" >large Ksh 100<br>
+    </div>
+    <div class="row">
+      <label for="Crust">crust</label>
+      <input id="soft" type="checkbox" name="soft" >Soft ksh 30
+      <input id="thin" type="checkbox" name="thin">thin ksh 40
+      <input id="thick" type="checkbox" name="thick" >thick ksh 80
+    </div>
+  </form> -->
+
+</div>
+</div>
+    </div>
+
+
+
+
+
+  <!-- <script src=”https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js”></script> -->
+
+<script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js”></script>
+
+<script type=’text/javascript’ src=”js/jquery.mycart/jquery.mycart.js”></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
