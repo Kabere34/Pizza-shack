@@ -33,6 +33,13 @@ p {
 .her-text p {
   width: 60%;
 }
+.nav-link a {
+  text-decoration: none;
+  color: #f0aa1f;
+}
+#par1 {
+  width: 80%;
+}
 .story {
   flex-direction: column;
   justify-content: center;

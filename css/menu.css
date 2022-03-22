@@ -5,16 +5,27 @@
 }
 
 body {
-  overflow-x: hidden;}
-html, body{
-  background-color: green;
+  overflow-x: hidden;
 }
+html,
+body {
+  background-color: rgb(36, 29, 29);
+  color: white;
 }
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: ;
+  justify-content: center;
   padding: 10px;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #f0aa1f;
 }
 .menu div {
   width: 100px;
@@ -44,7 +55,7 @@ html, body{
 .txt {
   width: 80%;
 }
-.badge-notify {
+/* .badge-notify {
   background: red;
   position: relative;
   top: -20px;
@@ -53,7 +64,7 @@ html, body{
 .my-cart-icon-affix {
   position: fixed;
   z-index: 999;
-}
+} */
 .modalBox {
   display: none;
 }
@@ -101,4 +112,9 @@ form input {
   border-radius: 10px;
   padding: 6px;
   background-color: white;
+}
+.txt button {
+  background-color: #e2ce7b;
+  padding: 7px;
+  border-radius: 10px;
 }
