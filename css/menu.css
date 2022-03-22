@@ -55,6 +55,9 @@ body {
 .txt {
   width: 80%;
 }
+input {
+  color: black;
+}
 /* .badge-notify {
   background: red;
   position: relative;
@@ -99,7 +102,7 @@ body {
   border: 1px solid #888;
   margin: auto;
   padding: 10px;
-  background-color: pink;
+  background-color: #e2ce7b;
 }
 form input {
   width: 30%;
@@ -112,6 +115,7 @@ form input {
   border-radius: 10px;
   padding: 6px;
   background-color: white;
+  color: black;
 }
 .txt button {
   background-color: #e2ce7b;

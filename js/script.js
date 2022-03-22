@@ -17,9 +17,7 @@ let z = document.getElementById("topping");
 function myFunction() {
   if (q.value == "Small" && w.value == "Crispy" && z.value == "Hawaiian") {
     let pizzaPrice1 = sizePrice[0] + crustPrice[0] + toppingsPrice[0];
-    document.getElementById(
-      "info"
-    ).innerText = `Total price is ${pizzaPrice1}.`;
+    document.getElementById("info").innerText = pizzaPrice1;
   }
   if (q.value == "Small" && w.value == "Crispy" && z.value == "Barbeque") {
     let pizzaPrice2 = sizePrice[0] + crustPrice[0] + toppingsPrice[1];
@@ -39,11 +37,11 @@ function myFunction() {
   }
   if (q.value == "Small" && w.value == "Stuffed" && z.value == "Olive") {
     let pizzaPrice6 = sizePrice[0] + crustPrice[1] + toppingsPrice[2];
-    document.getElementById("info").innerText = pizzaPrice6;
+    document.getElementById("info").innerText = `price is ${pizzaPrice6}`;
   }
   if (q.value == "Small" && w.value == "Gluten-free" && z.value == "Hawaiian") {
-    let pizzaPrice7 = sizePrice[0] + crustPrice[0] + toppingsPrice[0];
-    document.getElementById("info").innerText = pizzaPrice7;
+    let pizzaPrice7 = sizePrice[0] + crustPrice[1] + toppingsPrice[0];
+    document.getElementById("info").innerText = `price is ${pizzaPrice7}`;
   }
   if (q.value == "Small" && w.value == "Gluten-free" && z.value == "Barbeque") {
     let pizzaPrice8 = sizePrice[0] + crustPrice[1] + toppingsPrice[1];
