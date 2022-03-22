@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  overflow-x: hidden;
+  overflow-x: hidden;}
+html, body{
+  background-color: green;
+}
 }
 .menu {
   display: flex;
@@ -30,6 +34,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
 .tops-img {
   width: 25%;
 }
@@ -49,9 +54,9 @@ body {
   position: fixed;
   z-index: 999;
 }
-/* .modalBox {
+.modalBox {
   display: none;
-} */
+}
 .pizza-topping {
   display: flex;
   flex-direction: row;
@@ -89,3 +94,11 @@ form input {
   width: 30%;
 }
 /* modal */
+#demo {
+  border: 1px solid white;
+  width: 86px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 6px;
+  background-color: white;
+}

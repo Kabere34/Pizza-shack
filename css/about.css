@@ -3,9 +3,15 @@ html {
   height: 100%;
   margin: 0;
 }
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .nav-link {
   padding: 10px;
 }
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/aboutimg.jpg");
@@ -24,6 +30,9 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.her-text p {
+  width: 60%;
+}
 .story {
   flex-direction: column;
   justify-content: center;
@@ -36,7 +45,7 @@ p {
 }
 .awards {
   width: 70%;
-  background-color: rgb(52, 86, 116);
+  background-color: #e2ce7b;
   display: flex;
   flex-direction: column;
   align-items: center;

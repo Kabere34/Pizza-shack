@@ -6,6 +6,10 @@ $(".btn-order").click(function () {
   modal.show();
 });
 
+$(".btn-close").click(function () {
+  modal.hide();
+});
+
 let q = document.getElementById("size");
 let w = document.getElementById("crusts");
 let z = document.getElementById("topping");
@@ -13,7 +17,9 @@ let z = document.getElementById("topping");
 function myFunction() {
   if (q.value == "Small" && w.value == "Crispy" && z.value == "Hawaiian") {
     let pizzaPrice1 = sizePrice[0] + crustPrice[0] + toppingsPrice[0];
-    document.getElementById("info").innerText = pizzaPrice1;
+    document.getElementById(
+      "info"
+    ).innerText = `Total price is ${pizzaPrice1}.`;
   }
   if (q.value == "Small" && w.value == "Crispy" && z.value == "Barbeque") {
     let pizzaPrice2 = sizePrice[0] + crustPrice[0] + toppingsPrice[1];
